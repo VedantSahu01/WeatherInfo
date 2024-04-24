@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/weather_db_a
+    username: weather_user
+    password: weather_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+openweathermap:
+  api:
+    cordUrl: http://api.openweathermap.org/geo/1.0/zip
+    currUrl: https://api.openweathermap.org/data/2.5/weather
+    histUrl: https://history.openweathermap.org/data/2.5/history/city
+    key: YOUR_KEY
