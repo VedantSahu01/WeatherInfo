@@ -5,6 +5,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.vedant.controller.WeatherController;
 import org.vedant.model.WeatherInfo;
 import org.vedant.service.WeatherService;
@@ -15,7 +16,8 @@ import static org.mockito.Mockito.when;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-@ExtendWith(MockitoExtension.class)
+
+@ExtendWith(SpringExtension.class)
 public class WeatherControllerTest {
 
     @Mock

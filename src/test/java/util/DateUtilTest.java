@@ -1,11 +1,14 @@
 package util;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.vedant.util.DateUtil;
 
 import java.time.LocalDate;
 import java.time.ZoneOffset;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(SpringExtension.class)
 public class DateUtilTest {
 
     private final DateUtil dateUtil = new DateUtil();
